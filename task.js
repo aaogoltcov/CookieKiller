@@ -8,7 +8,7 @@ let previousClicks = 0;
 
 cookieImage.onclick = function () {
     // new image size
-    cookieImage.className = 'new__clicker__cookie';
+    cookieImage.classList.contains('clicker__cookie') ? cookieImage.className = 'new__clicker__cookie' : cookieImage.className = 'clicker__cookie';
 
     // clicks count
     let currentClicks = parseInt(cookieClick.textContent);
